@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F5F7FB;
+  color: #101828;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* subtle scrollbar for kanban columns */
+.scroll-thin::-webkit-scrollbar {
+  width: 6px;
+}
+.scroll-thin::-webkit-scrollbar-thumb {
+  background-color: #E4E8F1;
+  border-radius: 999px;
+}
+
+/* the "flow line" signature under column headers */
+.flow-underline {
+  height: 3px;
+  border-radius: 999px;
+  background-size: 200% 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
